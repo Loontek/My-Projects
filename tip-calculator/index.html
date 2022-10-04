@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221004181226">
+	<link rel="icon" href="img/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap&_v=20221004181226" rel="stylesheet">
+	<title>Tip Calculator</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="header__title">spli<br />tter</h1>
+	</header>
+	<main>
+		<form action="f" class="splitter-wrapper">
+			<div class="input-side">
+				<div class="bill">
+					<label for="bill" class="bill__desc input-desc">Bill</label>
+					<input type="number" class="bill__input number-input" id="bill" placeholder="0">
+				</div>
+				<div class="tip-percents">
+					<span class="tip-percents__desc input-desc">Select Tip %</span>
+					<div class="percent-buttons tip-percents__btns">
+						<button class="percent-btn percent-buttons__btn" type="button" name="5">5%</button>
+						<button class="percent-btn percent-buttons__btn" type="button" name="10">10%</button>
+						<button class="percent-btn percent-buttons__btn" type="button" name="15">15%</button>
+						<button class="percent-btn percent-buttons__btn" type="button" name="25">25%</button>
+						<button class="percent-btn percent-buttons__btn" type="button" name="50">50%</button>
+						<input class="percent-custom-input percent-buttons__input" type="number" placeholder="Custom"></input>
+					</div>
+				</div>
+				<div class="number-of-people">
+					<label for="number-of-people" class="number-of-people__desc input-desc">Number of People</label>
+					<span class="number-of-people__error">Can't be zero!</span>
+					<input type="number" class="number-of-people__input number-input" id="number-of-people" placeholder="0">
+				</div>
+			</div>
+			<div class="show-side">
+				<div class="tip-results">
+					<figure class="tip-amount show-side__desc">
+						<figcaption class="tip-amount__desc">
+							Tip amount <br />
+							<span class="show-side__desc_gray">/ person</span>
+						</figcaption>
+						<span class="tip-amount__quantity show-side__quantity">$0.00</span>
+					</figure>
+					<figure class="total show-side__desc">
+						<figcaption class="total__desc">
+							Total <br /> <span class="show-side__desc_gray">/
+								person</span>
+						</figcaption>
+						<span class="total__quantity show-side__quantity">$0.00</span>
+					</figure>
+				</div>
+				<input class="reset-btn" type="reset" value="Reset"></input>
+			</div>
+		</form>
+	</main>
+	<footer></footer>
+	<script src="js/app.min.js?_v=20221004181226"></script>
+</body>
+
+</html>
